@@ -11,7 +11,7 @@ spring:
     refresh:
       enabled: false
   application:
-    name: slow-rest-service-v1
+    name: slow-rest-service-v0
 
 logging:
   level:

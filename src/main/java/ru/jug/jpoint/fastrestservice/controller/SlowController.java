@@ -15,7 +15,7 @@ public class SlowController {
 
     @GetMapping("/")
     public ResponseEntity<InfoDto> getInfo() throws InterruptedException {
-        sleep(6000);
-        return new ResponseEntity<>(new InfoDto("Steady", "Poke"), HttpStatus.OK);
+        sleep(3000);
+        return new ResponseEntity<>(new InfoDto("Slow", "Poke"), HttpStatus.OK);
     }
 }
