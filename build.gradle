@@ -26,7 +26,10 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-aop'
     implementation 'io.micrometer:micrometer-core'
     implementation 'io.micrometer:micrometer-registry-prometheus'
-    implementation 'io.micrometer:micrometer-tracing-bridge-brave'
+
+    //Tracers-Exporters for Braze + Zipkin
+    implementation 'io.micrometer:micrometer-tracing-bridge-brave:1.0.3'
+    implementation 'io.zipkin.reporter2:zipkin-reporter-brave'
 
     //Logs
     implementation 'com.github.loki4j:loki-logback-appender:1.4.0'
